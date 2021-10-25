@@ -12,7 +12,7 @@ function processing() {
 
     if (tempoH !== '' && tempoMin !== '' && tempoS !== '' && peso !== '' && distancia !== '') {
 
-        const tempoTotalS = ( (tempoH * 60) + (tempoMin * 60) + (tempoS) );
+        const tempoTotalS = ( (tempoH * 3600) + (tempoMin * 60) + (tempoS) );
 
         const pace = ( (tempoTotalS / 3600) / distancia ).toFixed(2);
         
