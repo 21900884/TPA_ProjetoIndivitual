@@ -14,7 +14,7 @@ function processing() {
 
         const tempoTotalS = ( (tempoH * 3600) + (tempoMin * 60) + (tempoS) );
 
-        const pace = ( (tempoTotalS / 3600) / distancia ).toFixed(2);
+        const pace = ( (tempoTotalS / 60) / distancia ).toFixed(2);
         
         const velocidade = (distancia / (tempoTotalS / 3600)).toFixed(2);
         
